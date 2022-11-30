@@ -5,7 +5,7 @@ const initialState = {
 };
 
 export const getMessage = createAsyncThunk("greeting/getGreeting", async () => {
-  const data = await fetch("http://localhost:5000/api/v1/greetings", {
+  const data = await fetch("http://localhost:3000/api/v1/greetings", {
     method: "get",
     headers: {
       "Content-Type": "application/json",
